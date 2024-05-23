@@ -1,5 +1,5 @@
 <?php
-include 'db.php';
+include 'db/db.php';
 session_start();
 
 $sql = "SELECT * FROM tugas";
@@ -14,7 +14,7 @@ $result = $conn->query($sql);
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TugasKu</title>
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -40,7 +40,7 @@ $result = $conn->query($sql);
 
 
     <div class="container d-flex flex-column">
-      <form id="taskForm" class="mt-4" method="post" action="create.php">
+      <form id="taskForm" class="mt-4" method="post" action="controller/create.php">
         <label for="inputTugas" class="form-label">Nama Tugas</label>
         <input type="text" id="inputTugas" class="form-control" placeholder="..." name="nama">
 
@@ -111,7 +111,7 @@ $result = $conn->query($sql);
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
