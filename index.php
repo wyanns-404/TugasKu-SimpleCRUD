@@ -44,12 +44,12 @@ $result = $conn->query($sql);
     <div class="container d-flex flex-column">
       <form id="taskForm" class="mt-4" method="post" action="controller/create.php">
         <label for="inputTugas" class="form-label">Nama Tugas</label>
-        <input type="text" id="inputTugas" class="form-control" placeholder="..." name="nama">
+        <input type="text" id="inputTugas" class="form-control" placeholder="Masukan nama tugas disini.." name="nama">
 
-        <label for="inputMataKuliah" class="form-label mt-2">Mata Kuliah</label>
-        <input type="text" id="inputMataKuliah" class="form-control" placeholder="..." name="mata_kuliah">
+        <label for="inputMataKuliah" class="form-label mt-3">Mata Kuliah</label>
+        <input type="text" id="inputMataKuliah" class="form-control" placeholder="Masukan mata kuliah disini.." name="mata_kuliah">
 
-        <label for="inputDeadline" class="form-label mt-2">Tanggal Deadline</label>
+        <label for="inputDeadline" class="form-label mt-3">Tanggal Deadline</label>
         <input type="date" class="form-control" id="inputDeadline" name="deadline" style="cursor: text;">
 
         <div class="button-tambah d-flex justify-content-center">
