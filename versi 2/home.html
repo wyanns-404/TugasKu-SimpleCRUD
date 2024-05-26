@@ -38,7 +38,8 @@
         <section id="main">
             <div class="container h-full min-h-screen w-full bg-blue-950 flex justify-center">
                 
-                <div class="main bg-white w-4/5 h-full min-h-full rounded-lg mt-7 p-7">
+                <div class="card bg-white w-4/5 h-full min-h-full rounded-lg mt-7 p-7">
+
                     <div class="flex flex-col justify-center items-center">
                         <h3 class="text-center font-medium text-4xl text-blue-950">Riwayat Tugas</h3>
                         <hr class="m-3 w-full">
@@ -47,92 +48,39 @@
                     <div class="w-full flex justify-end">
                         <button class="bg-blue-950 p-1 w-24 rounded-lg text-white font-semibold text-lg hover:bg-blue-900"><i class="bi bi-plus-circle"></i></button>
                     </div>
-                    
-                    <div class="flex min-h-96 items-start justify-center bg-white">
-                        <div class="p-6 px-0">
-                            
-                            <table class="w-full min-w-max table-auto text-left">
-                                <thead>
-                                    <tr>
-                                        <th class="border-y border-blue-gray-100 bg-blue-gray-50/50 p-4">
-                                            <p
-                                            class="block antialiased font-sans text-sm text-blue-gray-900 font-normal leading-none opacity-70">
-                                            Transaction</p>
-                                        </th>
-                                        
-                                        <th class="border-y border-blue-gray-100 bg-blue-gray-50/50 p-4">
-                                            <p
-                                            class="block antialiased font-sans text-sm text-blue-gray-900 font-normal leading-none opacity-70">
-                                            Amount</p>
-                                        </th>
-                                        
-                                        <th class="border-y border-blue-gray-100 bg-blue-gray-50/50 p-4">
-                                            <p
-                                            class="block antialiased font-sans text-sm text-blue-gray-900 font-normal leading-none opacity-70">
-                                            Date</p>
-                                        </th>
-                                        
-                                        <th class="border-y border-blue-gray-100 bg-blue-gray-50/50 p-4">
-                                            <p
-                                            class="block antialiased font-sans text-sm text-blue-gray-900 font-normal leading-none opacity-70">
-                                            Status</p>
-                                        </th>
-                                        
-                                    </tr>
-                                </thead>
-                                
-                                <tbody>
-                                    <tr>
-                                        <td class="p-4 border-b border-blue-gray-50">
-                                            <div class="flex items-center gap-3">
-                                                <img src="https://docs.material-tailwind.com/img/logos/logo-spotify.svg" alt="Spotify"
-                                                class="inline-block relative object-center w-12 h-12 rounded-lg border border-blue-gray-50 bg-blue-gray-50/50 object-contain p-1">
-                                                <p class="block antialiased font-sans text-sm leading-normal text-blue-gray-900 font-bold">Spotify
-                                                </p>
-                                            </div>
-                                        </td>
-                                        
-                                        <td class="p-4 border-b border-blue-gray-50">
-                                            <p class="block antialiased font-sans text-sm leading-normal text-blue-gray-900 font-normal">$2,500
-                                            </p>
-                                        </td>
-                                        
-                                        <td class="p-4 border-b border-blue-gray-50">
-                                            <p class="block antialiased font-sans text-sm leading-normal text-blue-gray-900 font-normal">Wed
-                                                3:00pm</p>
-                                            </td>
-                                            
-                                            <td class="p-4 border-b border-blue-gray-50">
-                                                <button
-                                                class="relative align-middle select-none font-sans font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-10 max-w-[40px] h-10 max-h-[40px] rounded-lg text-xs text-gray-900 hover:bg-gray-900/10 active:bg-gray-900/20"
-                                                type="button">
-                                                <span class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                                    aria-hidden="true" class="h-4 w-4">
-                                                    <path
-                                                    d="M21.731 2.269a2.625 2.625 0 00-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 000-3.712zM19.513 8.199l-3.712-3.712-12.15 12.15a5.25 5.25 0 00-1.32 2.214l-.8 2.685a.75.75 0 00.933.933l2.685-.8a5.25 5.25 0 002.214-1.32L19.513 8.2z">
-                                                </path>
-                                            </svg>
-                                        </span>
-                                    </button>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    
+
+                    <div class="w-full mt-4">
+                        <table class="table-auto hover:border-collapse w-full">
+                            <thead>
+                                <tr>
+                                    <th>Nama Tugas</th>
+                                    <th>Mata Kuliah</th>
+                                    <th>Deadline</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="text-center">
+                                    <td>Kuis Web</td>
+                                    <td>Pemograman Web</td>
+                                    <td>2024/12/12</td>
+                                    <td>Edit | Hapus</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-
-<footer class="bg-blue-950 flex justify-center">
-    <div class="m-4 text-white text-sm">
-        &copy; Copyright <strong><span>wyanns-404</span></strong>. All Rights Reserved
-    </div>
-</footer>
-
-
-</body>
-
-</html>
+        </section>
+        
+        <footer class="bg-blue-950 flex justify-center">
+            <div class="m-4 text-white text-sm">
+                &copy; Copyright <strong><span>wyanns-404</span></strong>. All Rights Reserved
+            </div>
+        </footer>
+        
+        
+    </body>
+    
+    </html>
